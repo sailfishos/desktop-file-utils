@@ -1,12 +1,12 @@
 Name: desktop-file-utils
 Summary: Utilities for manipulating .desktop files
-Version: 0.18
+Version: 0.19
 Release: 1
 Group: Development/Tools
 License: GPLv2+
 URL: http://www.freedesktop.org/software/desktop-file-utils
 Sources:
-    - http://www.freedesktop.org/software/desktop-file-utils/releases/%{name}-%{version}.tar.bz2
+    - http://www.freedesktop.org/software/desktop-file-utils/releases/%{name}-%{version}.tar.xz
 Description: |
     .desktop files are used to describe an application for inclusion in
     GNOME or KDE menus.  This package contains desktop-file-validate which

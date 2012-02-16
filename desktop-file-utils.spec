@@ -7,12 +7,12 @@
 
 Name:       desktop-file-utils
 Summary:    Utilities for manipulating .desktop files
-Version:    0.18
+Version:    0.19
 Release:    1
 Group:      Development/Tools
 License:    GPLv2+
 URL:        http://www.freedesktop.org/software/desktop-file-utils
-Source0:    http://www.freedesktop.org/software/desktop-file-utils/releases/%{name}-%{version}.tar.bz2
+Source0:    http://www.freedesktop.org/software/desktop-file-utils/releases/%{name}-%{version}.tar.xz
 Source100:  desktop-file-utils.yaml
 BuildRequires:  pkgconfig(glib-2.0)
 
@@ -62,9 +62,7 @@ rm -rf %{buildroot}
 # >> files
 %doc AUTHORS COPYING README NEWS
 %{_bindir}/*
-%{_mandir}/man1/desktop-file-install.1.gz
-%{_mandir}/man1/desktop-file-validate.1.gz
-%{_mandir}/man1/update-desktop-database.1.gz
+%{_mandir}/man1/*.1.gz
 # << files
 
 

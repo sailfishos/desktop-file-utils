@@ -1,6 +1,6 @@
 Name: desktop-file-utils
 Summary: Utilities for manipulating .desktop files
-Version: 0.19
+Version: 0.20
 Release: 1
 Group: Development/Tools
 License: GPLv2+
@@ -16,5 +16,5 @@ Description: |
     fixing it up in the process.
 
 PkgConfigBR:
-    - glib-2.0
+    - glib-2.0 >= 2.8.0
 Configure: configure

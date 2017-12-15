@@ -1,0 +1,3 @@
+[submodule "desktop-file-utils"]
+	path = desktop-file-utils
+	url = git://anongit.freedesktop.org/xdg/desktop-file-utils

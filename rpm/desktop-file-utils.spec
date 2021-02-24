@@ -8,6 +8,8 @@ Source0:    %{name}-%{version}.tar.gz
 BuildRequires:  pkgconfig(glib-2.0) >= 2.8.0
 BuildRequires:  meson
 
+Patch0: 0001-Avoid-warnings-on-x-url-handler-mimetypes.patch
+
 %description
 .desktop files are used to describe an application for inclusion in
 GNOME or KDE menus.  This package contains desktop-file-validate which
@@ -23,7 +25,7 @@ Summary: Documentation for %{name}
 %{summary}.
 
 %prep
-%setup -q -n %{name}-%{version}/%{name}
+%autosetup -p1 -n %{name}-%{version}/%{name}
 
 %build
 %meson

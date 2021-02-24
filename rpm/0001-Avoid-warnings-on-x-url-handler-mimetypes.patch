@@ -1,0 +1,29 @@
+From 2ac6c04ec06636cd1f2377b676038d87b64dc2b2 Mon Sep 17 00:00:00 2001
+From: Pekka Vuorela <pekka.vuorela@jolla.com>
+Date: Wed, 24 Feb 2021 14:20:51 +0200
+Subject: [PATCH] Avoid warnings on x-url-handler mimetypes
+
+Support added to libcontentaction. Might be adjusted later to support
+parameters, but it's a start now.
+
+Let's not warn on this.
+---
+ src/mimeutils.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/mimeutils.c b/src/mimeutils.c
+index bddc7a0..66a13bc 100644
+--- a/src/mimeutils.c
++++ b/src/mimeutils.c
+@@ -40,7 +40,7 @@
+ 
+ /* Not registered with IANA, but used on a free desktop */
+ static const char *known_fdo_media_types[] = {
+-  "inode", "x-content", "x-scheme-handler",
++  "inode", "x-content", "x-scheme-handler", "x-url-handler",
+   /* The chemical media type was never really proposed to IANA, but is
+    * well-known and in use by various applications out there. There are
+    * also some guidelines to not abuse it.
+-- 
+2.29.2
+

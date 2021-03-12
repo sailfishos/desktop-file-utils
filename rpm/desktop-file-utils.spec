@@ -35,6 +35,12 @@ Summary: Documentation for %{name}
 rm -rf %{buildroot}
 %meson_install
 
+%transfiletriggerin -- %{_datadir}/applications
+update-desktop-database &> /dev/null || :
+
+%transfiletriggerpostun -- %{_datadir}/applications
+update-desktop-database &> /dev/null || :
+
 %files
 %defattr(-,root,root,-)
 %license COPYING

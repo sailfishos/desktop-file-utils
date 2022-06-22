@@ -3,7 +3,7 @@ Summary:    Utilities for manipulating .desktop files
 Version:    0.26
 Release:    1
 License:    GPLv2+
-URL:        http://www.freedesktop.org/software/desktop-file-utils
+URL:        https://github.com/sailfishos/desktop-file-utils
 Source0:    %{name}-%{version}.tar.gz
 BuildRequires:  pkgconfig(glib-2.0) >= 2.8.0
 BuildRequires:  meson
